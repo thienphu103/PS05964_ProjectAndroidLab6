@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a.lab6.Game_Millionaire.Millionaire_Layout">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="116dp"
+            android:layout_height="129dp"
+            android:layout_below="@+id/txtTest2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:contentDescription=""
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_game"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+
+            android:id="@+id/txtUserGame"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:drawableLeft="@drawable/person"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/txtPass"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded"
+            tools:layout_editor_absoluteX="68dp" />
+
+        <Button
+            android:id="@+id/btnLoginGame"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_below="@+id/txtUserGame"
+            android:layout_marginTop="51dp"
+            android:background="#0E3047"
+            android:text="Play"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="274dp" />
+
+
+        <TextView
+            android:id="@+id/txtTest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtPass"
+            android:layout_below="@+id/txtUser"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="12dp"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtTest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtTest1"
+            android:layout_below="@+id/txtPass"
+            android:layout_marginTop="13dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnTopPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/txtTest2"
+            android:layout_marginEnd="12dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/gameicon"
+            android:text="Top Player"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="700dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
