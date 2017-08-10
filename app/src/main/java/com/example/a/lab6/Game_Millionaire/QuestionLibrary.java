@@ -1,6 +1,7 @@
 package com.example.a.lab6.Game_Millionaire;
 
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class QuestionLibrary {
@@ -9,6 +10,8 @@ int index=0;
     public int getIndex() {
         return index;
     }
+
+    private ArrayList<String[]> listQuestion;
 
     public void setIndex(int index) {
         this.index = index;
@@ -23,20 +26,18 @@ int index=0;
 
             "900-1",
             "15/3",
-
             "1+2*3",
             "4+4*4",
             "1+2*3/6",
 
             "x+5=8,x=?",
-            "20x-5=0,x=?",
+            "5x-20=0,x=?",
             "120+x=200,x=?",
             "3x=15,x=?",
             "1+1=???",
             ""
 
     };
-
 
     private String mChoices [][] = {
             {"1", "5", "4","0"},
@@ -75,6 +76,7 @@ public int Index(){
 }
     public String getQuestion(int a) {
         String question= mQuestions[index];
+        listQuestion = new ArrayList<>();
         return question;
     }
 

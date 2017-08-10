@@ -47,9 +47,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Game_Millionaire.MainActivityMillionaire"></activity>
-        <activity android:name=".Game_Millionaire.Congratulation_Game"></activity>
-        <activity android:name=".Game_Millionaire.Lose_Game"></activity>
+        <activity android:name=".Game_Millionaire.MainActivityMillionaire" />
+        <activity android:name=".Game_Millionaire.Congratulation_Game" />
+        <activity android:name=".Game_Millionaire.Lose_Game" />
+        <activity android:name=".Game_Ramdom_Number.Game_Ramdom_Math">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Game_Ramdom_Number.Ramdom_Math_Layout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Game_Ramdom_Number.Loser_Game"/>
+        <activity android:name=".Game_Ramdom_Number.Win_Game"/>
     </application>
 
 </manifest>

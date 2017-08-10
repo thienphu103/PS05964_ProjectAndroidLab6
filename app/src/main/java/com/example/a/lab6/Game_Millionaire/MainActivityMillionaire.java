@@ -13,7 +13,6 @@ import com.example.a.lab6.R;
 public class MainActivityMillionaire extends AppCompatActivity {
 
     private QuestionLibrary mQuestionLibrary = new QuestionLibrary();
-
     private TextView mScoreView;
     private TextView mNameView;
     private TextView mNumView;
